@@ -1,0 +1,29 @@
+#N canvas 1228 59 596 448 10;
+#X obj 11 200 freeverb~;
+#X obj 25 29 hsl 55 25 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X msg 127 183 dry \$1;
+#X obj 25 72 hsl 55 25 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X msg 197 183 wet \$1;
+#X obj 25 114 hsl 55 25 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X msg 267 183 roomsize \$1;
+#X text 20 51 Dry;
+#X text 21 95 Wet;
+#X text 20 137 Room Size;
+#X obj 11 227 outlet~;
+#X obj 62 227 outlet~;
+#X obj 11 173 inlet~;
+#X obj 62 173 inlet~;
+#X connect 0 0 10 0;
+#X connect 0 1 11 0;
+#X connect 1 0 2 0;
+#X connect 2 0 0 0;
+#X connect 3 0 4 0;
+#X connect 4 0 0 0;
+#X connect 5 0 6 0;
+#X connect 6 0 0 0;
+#X connect 12 0 0 0;
+#X connect 13 0 0 1;
+#X coords 0 -1 1 1 84 150 1 10 10;

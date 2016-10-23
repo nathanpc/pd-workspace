@@ -1,0 +1,28 @@
+#N canvas 642 649 450 300 10;
+#X obj 221 147 vd~ dly;
+#X obj 22 27 hsl 55 25 0 500 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 2900 1;
+#X obj 221 92 delwrite~ dly 5000;
+#X obj 22 62 hsl 55 25 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 5000 1;
+#X obj 222 171 *~;
+#X obj 221 67 r~ dlyfb;
+#X obj 222 197 s~ dlyfb;
+#X obj 221 123 sig~;
+#X text 87 20 Duration;
+#X floatatom 89 37 5 0 0 0 - - -;
+#X floatatom 89 72 5 0 0 0 - - -;
+#X text 87 55 Feedback;
+#X obj 277 171 outlet~;
+#X obj 193 40 inlet~;
+#X connect 0 0 4 0;
+#X connect 0 0 12 0;
+#X connect 1 0 7 0;
+#X connect 1 0 9 0;
+#X connect 3 0 4 1;
+#X connect 3 0 10 0;
+#X connect 4 0 6 0;
+#X connect 5 0 2 0;
+#X connect 7 0 0 0;
+#X connect 13 0 2 0;
+#X coords 0 -1 1 1 137 87 1 10 10;
