@@ -1,10 +1,10 @@
-#N canvas 305 649 450 300 10;
+#N canvas 305 649 166 202 10;
 #X obj 61 110 *~;
 #X obj 10 149 *~;
 #X obj 61 132 expr~ 1 - $v1;
 #X text 16 53 Depth;
-#X obj 21 30 hsl 55 25 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+#X obj 21 30 hsl 55 25 0 1 0 1 empty empty empty -2 -8 0 10 -262144
+-1 -1 3600 1;
 #X obj 10 110 inlet~;
 #X obj 61 86 inlet~;
 #X obj 10 173 outlet~;

@@ -1,13 +1,13 @@
 #N canvas 1228 59 596 448 10;
 #X obj 11 200 freeverb~;
-#X obj 25 29 hsl 55 25 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+#X obj 25 29 hsl 55 25 0 1 0 1 empty empty empty -2 -8 0 10 -262144
+-1 -1 1100 1;
 #X msg 127 183 dry \$1;
-#X obj 25 72 hsl 55 25 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+#X obj 25 72 hsl 55 25 0 1 0 1 empty empty empty -2 -8 0 10 -262144
+-1 -1 4500 1;
 #X msg 197 183 wet \$1;
-#X obj 25 114 hsl 55 25 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+#X obj 25 114 hsl 55 25 0 1 0 1 empty empty empty -2 -8 0 10 -262144
+-1 -1 4100 1;
 #X msg 267 183 roomsize \$1;
 #X text 20 51 Dry;
 #X text 21 95 Wet;
